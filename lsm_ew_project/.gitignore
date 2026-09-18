@@ -1,0 +1,39 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large datasets
+*.hdf5
+*.h5
+*.zip
+
+# Dataset folders
+data/
+datasets/
+
+# Machine learning models
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.joblib
+
+# Generated files
+results/
+outputs/
+logs/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
