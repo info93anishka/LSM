@@ -109,9 +109,9 @@ The reservoir operates on temporal spike dynamics rather than directly learning 
 
 ## 04 — Why Liquid State Machines?
 
-A conventional neural network learns both its internal representation and its classifier. An LSM separates these responsibilities.
+A conventional neural network jointly learns the feature representation and the final classifier. In contrast, an LSM separates these two functions.
 
-The **reservoir** is a recurrent, dynamically evolving spiking network. Input spikes trigger activity patterns that depend not only on the current input but also on recent signal history. This provides a form of short-term temporal memory.
+The **reservoir** is a recurrent spiking network that dynamically processes incoming spikes. Its activity depends not only on the current input but also on previous inputs, allowing it to capture temporal dependencies and provide short-term memory.
 
 The **readout layer** receives the reservoir state and performs the final classification. In this project, the reservoir itself does not require backpropagation-based training; only lightweight readout classifiers are trained.
 
